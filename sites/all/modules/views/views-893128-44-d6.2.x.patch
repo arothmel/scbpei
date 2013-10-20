@@ -1,0 +1,14 @@
+diff --git a/modules/user/views_handler_filter_user_name.inc b/modules/user/views_handler_filter_user_name.inc
+index e978175..23c8790 100644
+--- a/modules/user/views_handler_filter_user_name.inc
++++ b/modules/user/views_handler_filter_user_name.inc
+@@ -57,7 +57,7 @@ class views_handler_filter_user_name extends views_handler_filter_in_operator {
+     return $rc;
+   }
+ 
+-  function exposed_validate(&$form, &$form_state) {
++  function exposed_validate($form, &$form_state) {
+     if (empty($this->options['exposed'])) {
+       return;
+     }
+

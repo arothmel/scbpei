@@ -1,0 +1,465 @@
+/* $Id: style.css,v 1.23 2007/12/17 15:05:09 goba Exp $ */
+
+/*
+** HTML elements
+*/
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+  font: 11px/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
+}
+tr.odd td, tr.even td {
+  padding: 0.3em;
+}
+/* Headers */
+h1, h2, h3, h4 {
+  font: normal 2.8em Verdana, Arial, Helvetica, sans-serif;
+  /* font: bold 1em/1.5em Georgia, 'Times New Roman', Times, serif; */
+  /*   color: #53301B; */
+  color: #a05020;
+ /*  font-variant: small-caps; */
+}
+h1 a, h2 a, h3 a, h4 a {
+  color: #53301B;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+}
+/* h1 a:hover, h2 a:hover h3 a:hover, h4 a:hover {
+  border-bottom: 1px dotted #CC9933;
+}
+*/
+
+h1 {
+  font-size: 3.4em;
+  font-weight: normal;
+ /*  letter-spacing: -2px; */
+}
+
+h2 {
+  font-size: 2.1em;
+}
+h3, h4, h5, h6 {
+  font-size: 1.1em;
+}
+
+
+
+
+
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.9em;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:link {
+  color: #A66829;
+  /* 4D4D4D; */
+}
+a:visited {
+  color: #805020;
+}
+a:hover {
+  color: #A66829;
+ /*  border-bottom: 1px dotted #CC9933; */
+}
+fieldset {
+  border: 1px solid #ccc;
+}
+pre {
+  background-color: #eee;
+  padding: 0.75em 1.5em;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+table {
+  /* make <td> sizes relative to body size! */
+  font-size: 1em;
+}
+.form-item label {
+  font-size: 1em;
+  color: #222;
+}
+.item-list .title {
+  font-size: 1em;
+  color: #222;
+}
+.links {
+  margin-bottom: 0;
+}
+.comment .links {
+  margin-bottom: 0;
+}
+
+/*
+** Page layout blocks / IDs
+*/
+
+#container {
+  position: relative;
+  margin: 0 auto; 
+  width: 98%;
+  text-align: left;
+  }
+  
+#header, #content {
+  width: 100%;
+}
+#header {
+  /* background-color: #69c; */
+  background-color: #548E99;
+}
+
+
+#logo {
+  vertical-align: middle;
+  border: 0;
+}
+#logo img {
+  float: left; /* LTR */
+  padding: 0 1em;
+  border: 0;
+}
+#menu {
+  padding: 0.5em 0.5em 0 0.5em; /* LTR */
+  text-align: right; /* LTR */
+  vertical-align: middle;
+}
+#navlist {
+  font-size: 1.2em;
+  padding: 0 0.8em 1.2em 0; /* LTR */
+  color: #9cf;
+}
+#navlist a {
+  font-weight: bold;
+  color: #fff;
+}
+/* AAR find colour match to H1 */
+#navlist a:hover {
+  color:#805020;  /* 805020 too dark */
+  font-weight: bold;
+  /* color: #fff; */
+}
+
+#subnavlist {
+  padding: 0.5em 1.2em 0.4em 0; /* LTR */
+  font-size: 0.8em;
+  color: #9cf;
+}
+#subnavlist a {
+  font-weight: bold;
+  color: #9cf;
+}
+ul.links li {
+  border-left: 1px solid #CC9933; /* LTR */
+}
+ul.links li.first {
+  border: none;
+}
+#search .form-text, #search .form-submit {
+  border: 1px solid #369;
+  font-size: 1.1em;
+  height: 1.5em;
+  vertical-align: middle;
+}
+#search .form-text {
+  width: 8em;
+  padding: 0 0.5em;
+}
+#mission {
+  background-color: #369;
+  padding: 1.5em 2em;
+  color: #fff;
+}
+#mission a, #mission a:visited {
+  color: #9cf;
+  font-weight: bold;
+}
+.site-name {
+  margin: 0.6em 0 0 ;
+  padding: 0;
+  font-size: 2em;
+}
+.site-name a:link, .site-name a:visited {
+  color: #fff;
+}
+.site-name a:hover {
+  /* color: #369;  AAR was blue... */
+  color: #805020;
+  text-decoration: none;
+}
+.site-slogan {
+  font-size: 1em;
+  color: #eee;
+  display: block;
+  margin: 0;
+  font-style: italic; 
+  font-weight: bold;
+}
+#main {
+  /* padding in px not ex because IE messes up 100% width tables otherwise */
+  padding: 10px;
+}
+#mission, .node .content, .comment .content {
+  line-height: 1.4em;
+}
+#help {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.breadcrumb {
+  margin-bottom: .5em;
+}
+.messages {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+.error {
+  border-color: red;
+}
+#sidebar-left, #sidebar-right {
+  background-color: #C2CACC;
+  width: 16em;
+  /* padding in px not ex because IE messes up 100% width tables otherwise */
+  padding: 10px;
+  vertical-align: top;
+}
+#footer {
+  background-color: #C2CACC;
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/*
+** Common declarations for child classes of node, comment, block, box, etc.
+** If you want any of them styled differently for a specific parent, add
+** additional rules /with only the differing properties!/ to .parent .class.
+** See .comment .title for an example.
+*/
+.title, .title a {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #805020;
+  margin: 0 auto;  /* decrease default margins for h<x>.title */
+}
+.submitted {
+  color: #999;
+  font-size: 0.8em;
+}
+.links {
+  color: #999;
+}
+.links a {
+  font-weight: bold;
+}
+.block, .box {
+  padding: 0 0 1.5em 0; /* LTR */
+}
+.block {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 0.75em;
+  margin-bottom: 1.5em;
+}
+.block .title {
+  margin-bottom: .25em;
+}
+.box .title {
+  font-size: 1.1em;
+}
+.node {
+ /*  margin: .5em 0 2em; /* LTR */ 
+  padding: 10px 15px;
+  margin: 20px 15px 15px 10px;
+  border: 1px solid #EBEBEB;
+ /*  background: #f8f8f8; */
+}
+
+
+.node h2.title {
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  border-bottom: solid 1px #BBB;
+}
+.node h2.title {
+  font-size: 18px;
+}
+.node h2.title a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+
+
+
+.postmeta {
+  padding: 5px;
+  margin: 20px 15px 15px 10px;
+  border: 1px solid #EBEBEB;
+  background: #f8f8f8;
+}
+
+
+
+
+.sticky {
+  padding: .5em;
+  background-color: #eee;
+  border: solid 1px #ddd;
+}
+.node .content, .comment .content {
+  margin: .5em 0 .5em;
+}
+.node .taxonomy {
+  color: #999;
+  font-size: 0.8em;
+  padding-left: 1.5em; /* LTR */
+}
+.node .picture {
+  border: 1px solid #ddd;
+  float: right; /* LTR */
+  margin: 0.5em;
+}
+
+/* AAR */
+
+/* div.panel-pane div.node {
+  padding: 7px 0 7px 10px;
+  margin: 20px 15px 15px 10px;
+}  */
+.music {
+    padding: 7px 0 7px 50px;
+    margin: 20px 15px 15px 10px;
+    border: .5px solid #EBEBEB;
+    background: #f8f8f8;
+   }
+   
+
+.story {
+    padding: 7px 0 7px 10px;
+    margin: 20px 15px 15px 10px;
+    border: 0px; 
+    /* border: .5px solid #EBEBEB; */
+    background: #f8f8f8;
+   }
+   
+.press {
+   padding: 5px;
+   margin: 20px 15px 15px 10px;
+   border: 0px;
+   background: #f8f8f8;
+   }
+   
+div.view .views-admin-links {
+font-size:.85em;
+}
+
+div.view .views-admin-links a:hover {
+background:#f8f8f8;
+}
+   
+.comment {
+  border: 1px solid #abc;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+.comment .title a {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+.comment .new {
+  text-align: right; /* LTR */
+  font-weight: bold;
+  font-size: 0.8em;
+  float: right; /* LTR */
+  color: red;
+}
+.comment .picture {
+  border: 1px solid #abc;
+  float: right; /* LTR */
+  margin: 0.5em;
+}
+
+/*
+** Module specific styles
+*/
+#aggregator .feed-source {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 1em 0;
+}
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
+}
+#aggregator .title {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+#aggregator h3 {
+  margin-top: 1em;
+}
+#forum table {
+  width: 100%;
+}
+#forum td {
+  padding: 0.5em;
+}
+#forum td.forum, #forum td.posts {
+  background-color: #eee;
+}
+#forum td.topics, #forum td.last-reply {
+  background-color: #ddd;
+}
+#forum td.container {
+  background-color: #ccc;
+}
+#forum td.container a {
+  color: #555;
+}
+#forum td.statistics, #forum td.settings, #forum td.pager {
+  height: 1.5em;
+  border: 1px solid #bbb;
+}
+#forum td .name {
+  color: #96c;
+}
+#forum td .links {
+  padding-top: 0.7em;
+  font-size: 0.9em;
+}
+#profile .profile {
+  clear: both;
+  border: 1px solid #abc;
+  padding: .5em;
+  margin: 1em 0em;
+}
+#profile .profile .name {
+  padding-bottom: 0.5em;
+}
+.block-forum h3 {
+  margin-bottom: .5em;
+}
+div.admin-panel .description {
+  color: #999;
+}
+div.admin-panel .body {
+  background: #f4f4f4;
+}
+div.admin-panel h3 {
+  background-color: #69c;
+  color: #fff;
+  padding: 5px 8px 5px;
+  margin: 0;
+}
